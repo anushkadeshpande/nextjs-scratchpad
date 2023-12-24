@@ -19,3 +19,12 @@ New architecture by React team in React 18. Two types of components were introdu
 - Every folder corresponds to a path segment
 - To create dynamic routes, create a new folder with name like ```[id]```
     -  These route parameters can be accessed via props 
+
+
+#### Private Folder:
+- Private implementation detail and should not be considered by routing system
+- This folder and all its subfolders are excluded from routing
+- Prefix folder name with underscore
+- Useful to separate UI logic from routing logic
+
+* to include _ in url segments, folder name can be prefixed with "%5F"
