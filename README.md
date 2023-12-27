@@ -26,5 +26,4 @@ New architecture by React team in React 18. Two types of components were introdu
 - This folder and all its subfolders are excluded from routing
 - Prefix folder name with underscore
 - Useful to separate UI logic from routing logic
-
-* to include _ in url segments, folder name can be prefixed with "%5F"
+- to include _ in url segments, folder name can be prefixed with "%5F"
