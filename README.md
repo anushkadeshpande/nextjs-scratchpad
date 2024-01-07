@@ -27,3 +27,8 @@ New architecture by React team in React 18. Two types of components were introdu
 - Prefix folder name with underscore
 - Useful to separate UI logic from routing logic
 - to include _ in url segments, folder name can be prefixed with "%5F"
+
+
+#### Route Groups:
+Logically grouping routes and project files without affecting the URL path structure.
+Routes can be logically grouped by placing them in a directory with name like `(route-group)` and this won't have any effect on the url.
