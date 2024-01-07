@@ -32,3 +32,11 @@ New architecture by React team in React 18. Two types of components were introdu
 #### Route Groups:
 Logically grouping routes and project files without affecting the URL path structure.
 Routes can be logically grouped by placing them in a directory with name like `(route-group)` and this won't have any effect on the url.
+
+
+#### Layout:
+UI shared between multiple pages in the app.
+Layout can be defined by default exporting a React component from `layout.js` or `layout.tsx` file.
+This component should accept a children prop that will be populated with a child page while rendering.
+
+Nextjs already has a root `layout.tsx` file, which has to be present and if deleted, it is generated again.
