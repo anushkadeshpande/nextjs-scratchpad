@@ -1,6 +1,14 @@
+import { prisma } from "@/db";
 import Link from "next/link";
 
-export default function Home() {
+
+let getMessages = () => prisma.messages.findMany()
+
+export default async function Home() {
+  
+  const messages = await getMessages()
+  // await prisma.messages.create({ data: {sender: "Anna", message:"Hii", sentStatus: true}})
+
   return(
     <>
     <header className="flex justify-between items-center mb-4">
@@ -9,7 +17,7 @@ export default function Home() {
     </header>
 
     <ul className="pl-4">
-      {}
+      {messages.map(message => <p>{message.sender} : {message.message}</p>)}
     </ul>
     </>
   )
