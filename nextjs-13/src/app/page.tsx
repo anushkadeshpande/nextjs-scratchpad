@@ -14,7 +14,12 @@ export default async function Home() {
         <h1 className="text-2xl">Chat</h1>
         <Link
           className="border border-slate-300 text-slate-300 px-2 py-1 rounded hover:bg-slate-700 focus-within:bg-slate-700 outline-none"
-          href="/new"
+          href={{
+            pathname: '/new',
+            query: {
+              user: 'Anushka'
+            }
+          }}
         >
           New
         </Link>
